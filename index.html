@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="Kai Banks">
+
+  <title>Kai's Lens Catalog</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/jumbotron-narrow.css" rel="stylesheet">
+  <link href="css/stylesheet.css" rel="stylesheet">
+
+
+  <script type="text/javascript">
+  function showImage(smSrc, lgSrc) {
+    document.getElementById('largeImg').src = smSrc;
+    showLargeImagePanel();
+    unselectAll();
+    setTimeout(function() {
+      document.getElementById('largeImg').src = lgSrc;
+    }, 1)
+  }
+  function showLargeImagePanel() {
+    document.getElementById('largeImgPanel').style.display = 'block';
+  }
+  function unselectAll() {
+    if(document.selection)
+    document.selection.empty();
+    if(window.getSelection)
+    window.getSelection().removeAllRanges();
+  }
+  </script>
+
+
+</head>
+
+<body background ="img/lens.jpg">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class = "container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#top">Top</a></li>
+          <li><a href="#wide-angle">Wide-Angle</a></li>
+          <li><a href="#macro">Macro</a></li>
+          <li><a href="#portrait">Portrait</a></li>
+          <li><a href="#mid-range">Mid-Range</a></li>
+          <li><a href="#long-range">Long-Range</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Kai's Lens Catalog</h1>
+      <p class="lead">Visit us to figure out what lenses work best for you and your interests!</p>
+    </div>
+
+    <p id = "desc"> Note: click on all images to enlarge them!</p>
+
+    <div class = "well" id = "wide-angle">
+      <h4>Wide-Angle Lenses </h4>
+      <div class = "well well-sm">
+        <h5> <a target="_blank" href="http://www.amazon.com/Rokinon-Ultra-Angle-Fixed-Built/dp/B004NNUN02">Rokinon 14mm f/2.8 Prime </a></h5>
+        <h6>Price: $300 </h6>
+
+        <div class = "img_row">
+          <img src="img/14mm_small.jpg" style="cursor:pointer"
+          onclick="showImage(this.src, 'img/14mm.jpg');" />
+          <br>
+          <img src="img/14mm_sample_small.jpg" style="cursor:pointer"
+          onclick="showImage(this.src, 'img/14mm_sample.jpg');" />
+        </div>
+        <p> One of the best manual-focus wide-angle prime lenses out there. Awesome for astrophotgraphy and landscape photography. It does produce a slight fish-eye effect, as with most wide-angle lenses, but this can easily be corrected with lens profiles in LightRoom or PhotoShop. There are wide-angle options out there that do not produce a similar effect, but this one is less than a third the price of the nearest competitor made by Nikon. This lens is also popular with wide-angle videographers becuase of its crystal-clear glass and extremely smooth manual focus. Be warned: there is no autofocus for this lens on Nikon camera bodies.</p>
+        <p class = "rating"> My Rating: 8.5/10  </p>
+      </div>
+      <div class = "well well-sm">
+        <h5><a target="_blank" href="http://www.amazon.com/Tamron-10-24mm-3-5-4-5-Aspherical-Digital/dp/B001FB6PJI"> Tamron 10-24mm f/3.5-4.5 </a></h5>
+        <h6>Price: $500 </h6>
+
+        <div class = "img_row">
+          <img src="img/10-24mm_small.jpg" style="cursor:pointer"
+          onclick="showImage(this.src, 'img/10-24mm.jpg');" />
+          <br>
+          <img src="img/10-24mm_sample_small.jpg" style="cursor:pointer"
+          onclick="showImage(this.src, 'img/10-24mm_sample.jpg');" />
+        </div>
+        <p> Before the introduction of Nikon's slightly higher-quality prime lenses, Tamron had the vast majority of the market obsessed with its wide-angle zoom lenses. The 10-24mm used to be one of the most popular lenses in all Nikon photographers' kits, as it covered a wide range of wide-FOV options and was made very well. It's still a good option for someone planning on doing a ton of wide-angle photography but who doesn't want to carry around separate 10mm and 24mm lenses.</p>
+        <p class = "rating"> My Rating: 6/10  </p>
+      </div>
+    </div>
+
+    <div class = "well" id = "macro">
+      <h4>Macrophotography Lenses </h4>
+      <div class = "well well-sm">
+        <h5><a target="_blank" href="http://www.amazon.com/Nikon-AF-S-NIKKOR-Focus-Cameras/dp/B001S2PPT0">Nikon 35mm f/1.8G Prime </a></h5>
+        <h6>Price: $200 </h6>
+
+        <div class = "img_row">
+          <img src="img/35mm_small.jpg" style="cursor:pointer"
+          onclick="showImage(this.src, 'img/35mm.jpg');" />
+          <br>
+          <img src="img/35mm_sample_small.jpg" style="cursor:pointer"
+          onclick="showImage(this.src, 'img/35mm_sample.jpg');" />
+        </div>
+        <p> This lens, which has a slightly wider aperture and shorter focal length than the 50mm prime, is excellent for slightly wider FOV shots. It does not produce a measurable fish-eye effect, which is unusual for a lens with such a short focal distance. This is an ideal lens for macrophotography (flowers, insects, etc). Its short focal length also allows for an extremely quick auto-focus, so if you're planning on shooting fast-moving insects up close for example, choose the 35mm over the 50mm.</p>
+        <p class = "rating"> My Rating: 7/10  </p>
+
+      </div>
+      <div class = "well well-sm">
+        <h5><a target="_blank" href="http://www.amazon.com/Nikon-NIKKOR-14-24mm-Focus-Cameras/dp/B000VDCTCI">Nikon 14-24mm f/2.8G</a> </h5>
+        <h6>Price: $1900 </h6>
+
+        <div class = "img_row">
+          <img src="img/14-24mm_small.png" style="cursor:pointer"
+          onclick="showImage(this.src, 'img/14-24mm.png');" />
+          <br>
+          <img src="img/14-24mm_sample_small.jpg" style="cursor:pointer"
+          onclick="showImage(this.src, 'img/14-24mm_sample.jpg');" />
+        </div>
+        <p> My favorite overall lens. If you can pick one up and have the cash to spare, please do yourself a favor and get one. The low f-stop contributes to incredibly crisp shots, and the zoom capabilities are fantastic. It's an incredibly flexible lens, and will last the whole life of your camera. If you can afford it, get one of these instead of the Rokinon 14mm prime and Nikon 24mm prime. Its fisheye effect is limited, and the glass that comprises the lenses is extremely well-manufactured.</p>
+        <p class = "rating"> My Rating: 9.5/10  </p>
+      </div>
+    </div>
+
+    <div class = "well" id = "portrait">
+      <h4> Portrait Lenses </h4>
+      <div class = "well well-sm">
+        <h5><a target="_blank" href="http://www.amazon.com/Nikon-18-55mm-3-5-5-6G-Discontinued-Manufacturer/dp/B0009HN57E">Nikon 18-55mm f/3.5-5.6</a> </h5>
+        <h6>Price: $120 </h6>
+
+        <div class = "img_row">
+          <img src="img/18-55mm_small.jpg" style="cursor:pointer"
+          onclick="showImage(this.src, 'img/18-55mm.jpg');" />
+          <br>
+          <img src="img/18-55mm_sample_small.jpg" style="cursor:pointer"
+          onclick="showImage(this.src, 'img/18-55mm_sample.jpg');" />
+        </div>
+        <p> This is the tandard kit lens that comes with most new Nikons. Great for pretty much everything - and a solid investment if you're still trying to figure out what type of photography you like best. The 18mm focal length allows for the lowest f-stop, while the 55mm length most nearly reflects an average person's field of view. You likely won't end up using this lens for professional productions, but it's great for figuring out what focal length you like most.</p>
+        <p class = "rating"> My Rating: 8/10  </p>
+      </div>
+      <div class = "well well-sm">
+        <h5> <a target="_blank" href="http://www.amazon.com/Nikon-NIKKOR-Fixed-Focus-Cameras/dp/B00005LE6Z">Nikon 24mm f/2.8G Prime </a></h5>
+        <h6>Price: $400 </h6>
+
+        <div class = "img_row">
+          <img src="img/24mm_small.jpg" style="cursor:pointer"
+          onclick="showImage(this.src, 'img/24mm.jpg');" />
+          <br>
+          <img src="img/24mm_sample_small.jpg" style="cursor:pointer"
+          onclick="showImage(this.src, 'img/24mm_sample.jpg');" />
+        </div>
+        <p> A top lens for anybody interested in close-range professional portrait photography. Also excellent for video work, depending on subject distances. Give it a shot if you have some cash to spare, but be aware: this lens is not great for anything past 20 or so feet, as it's a non-zoomable close-focus prime lens. Carry this around if you want a good option that sits between a 14mm and 35mm lens. Unfortunately, in order to figure out that you want a lens in between those, you'll have to try them all out.</p>
+        <p class = "rating"> My Rating: 7/10  </p>
+      </div>
+      <div class = "well well-sm">
+        <h5><a target="_blank" href="http://www.amazon.com/Nikon-AF-S-NIKKOR-Focus-Cameras/dp/B004Y1AYAC">Nikon 50mm f/1.8G Prime </a></h5>
+        <h6>Price: $200 </h6>
+
+        <div class = "img_row">
+          <img src="img/50mm_small.jpg" style="cursor:pointer"
+          onclick="showImage(this.src, 'img/50mm.jpg');" />
+          <br>
+          <img src="img/50mm_sample_small.jpg" style="cursor:pointer"
+          onclick="showImage(this.src, 'img/50mm_sample.jpg');" />
+        </div>
+        <p> Called the "nifty fifty" for a reason. This is of the best lenses out there for portrait photography. The low f-stop allows for a very shallow depth of field, and the 50mm fixed focus is perfect for most close to mid-range applications. A ton of amateur videos on YouTube and elsewhere employ this lens, as it has a very smooth focus operation and captures the perfect field of view for a ton of situations. This is a must-have, and it's cheap.</p>
+        <p class = "rating"> My Rating: 9/10  </p>
+      </div>
+
+    </div>
+
+    <div class = "well" id = "mid-range">
+      <h4> Mid-Range Lenses </h4>
+      <div class = "well well-sm">
+        <h5>  <a target="_blank" href="http://www.amazon.com/Nikon-DC-NIKKOR-135mm-Fixed-Cameras/dp/B00006I5J4">Nikon 135mm f/2D Prime</a> </h5>
+        <h6>Price: $1400 </h6>
+
+        <div class = "img_row">
+          <img src="img/135mm_small.jpg" style="cursor:pointer"
+          onclick="showImage(this.src, 'img/135mm.jpg');" />
+          <br>
+          <img src="img/135mm_sample_small.jpg" style="cursor:pointer"
+          onclick="showImage(this.src, 'img/135mm_sample.jpg');" />
+        </div>
+        <p> The best lens out there for mid to long-range portrait work. Excellent for those shoots where you don't want to get too close to your subject, but still want super-crisp close-up face shots (weddings!). It has an incredibly low f-stop for its long focal length, which allows for shallow depths of field even at significant distances. This is one of the most popular lenses for wildlife photography situations in which the photographer is concealed in some manner and is thus able to reduce his or her distance to the wildlife of interest.</p>
+        <p class = "rating"> My Rating: 8.5/10  </p>
+      </div>
+      <div class = "well well-sm">
+        <h5><a target="_blank" href="http://www.amazon.com/Nikon-70-300mm-4-5-5-6G-Digital-Cameras/dp/B000HJPK2C">Nikon 70-300mm f/4.5-5.6</a> </h5>
+        <h6>Price: $500 </h6>
+
+        <div class = "img_row">
+          <img src="img/70-300mm_small.jpg" style="cursor:pointer"
+          onclick="showImage(this.src, 'img/70-300mm.jpg');" />
+          <br>
+          <img src="img/70-300mm_sample_small.jpg" style="cursor:pointer"
+          onclick="showImage(this.src, 'img/70-300mm_sample.jpg');" />
+        </div>
+        <p> This is an excellent mid to long-range multipurpose lens. It's a ton cheaper than the 200-500mm lens, and provides more mid-range options. The glass clarity isn't quite as good as the more expensive Nikkor lenses, and the high f-stop isn't ideal, but there's a lot of value in being able to shoot in the 70-300mm range. If I could have only one of these lenses with me on a trip to Africa, it'd be this one. "Versatile" describes this guy really well.</p>
+        <p class = "rating"> My Rating: 7/10  </p>
+      </div>
+    </div>
+
+    <div class = "well" id = "long-range">
+      <h4> Long-Range Lenses </h4>
+      <div class = "well well-sm">
+        <h5><a target="_blank" href="http://www.amazon.com/Nikon-NIKKOR-14-24mm-Focus-Cameras/dp/B000VDCTCI">Nikon 200-500mm f/5.6E</a> </h5>
+        <h6>Price: $1400 </h6>
+
+        <div class = "img_row">
+          <img src="img/200-500mm_small.jpg" style="cursor:pointer"
+          onclick="showImage(this.src, 'img/200-500mm.jpg');" />
+          <br>
+          <img src="img/200-500mm_sample_small.jpg" style="cursor:pointer"
+          onclick="showImage(this.src, 'img/200-500mm_sample.jpg');" />
+        </div>
+        <p> Probably the best lens for long-distance photography. Whether you're shooting birds, giraffes, lions, pool sports, or other distant events, this lens constantly rewards with ultra-crisp, low-distortion shots, even at high ISO values. It's not super fast, so you won't get a lot of bokeh, but it's the best lens past the 300mm mark. When you see footage of shy/hard-to-find animals on National Geographic and similar programs, those photos are more often than not captured with this particular lens when the photographer uses a Nikon body.</p>
+        <p class = "rating"> My Rating: 8/10  </p>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div id="largeImgPanel" onclick="this.style.display='none'">
+      <img id="largeImg"
+      style="max-width:95%; max-height:95%; margin:0; padding:0; padding-top: 60px;" />
+    </div>
+
+    <div id = "feedback">
+      <p id = "fback"> Feedback Form: </p>
+      <form action="//formspree.io/kaimbanks1@gmail.com"
+      method="POST">
+      <input type="text" name="name" value = "your name">
+      <br>
+      <input type="text" name = "feedback" value = "your feedback">
+      <br>
+      <input type="email" name="_replyto" value = "your email">
+      <br>
+      <input type="submit" value="Send">
+    </form>
+  </div>
+  <footer class="footer">
+    <p>&copy; 2016 Kai Banks</p>
+    <p>Sample Photos courtesy of Pixel Peeper. Lens photos courtesy of Ken Rockwell Productions. </p>
+  </footer>
+
+</div> <!-- /container -->
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
