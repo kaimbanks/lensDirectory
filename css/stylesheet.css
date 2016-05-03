@@ -75,3 +75,6 @@ h6 {
   padding-top: 5px;
   padding-bottom: 10px;
 }
+.thumb {
+  max-width: 95%;
+}
