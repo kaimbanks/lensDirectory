@@ -57,6 +57,7 @@ th{
 
 h4 {
   text-align: center;
+  font-size: 22px;
 }
 h5 {
   text-align: center;
@@ -68,14 +69,17 @@ h6 {
 .rating {
   text-align:center;
   font-weight: bold;
+  font-size: 18px;
 }
 .img_row {
   display: block;
   margin: 0 auto;
   text-align:center;
   padding-top: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 .thumb {
   max-width: 80%;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
